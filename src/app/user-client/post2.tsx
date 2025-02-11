@@ -1,17 +1,29 @@
-so what  does is this do? 
-const [posts, setPosts] = useState<Post[]>([]);
-
 import { useEffect, useState } from "react";
-
+// interface is the recommended way of storing data
 interface Post {
   id: number;
   title: string;
   body: string;
 }
+// Extending the interface (it can be extended as shown below)
+// interface Post {
+//   author: string;
+// }
+
+
+// how it is acesses
+// const post: Post = {
+//   id: 1,
+//   title: "Hello",
+//   body: "This is a post",
+//   author: "Caleb"
+// };
 
 // this method is recommended by chatgpt beacause it can be used in all react /nextjs components but its a bit complex
 // i recommend this
 const Posts2 = () => {
+  // <Post[]>: This is a TypeScript generic type annotation, specifying that posts will be an array of Post objects.
+  // []: The initial value, an empty array (meaning no posts initially).
   const [posts, setPosts] = useState<Post[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, seterror] = useState(true);
@@ -56,4 +68,3 @@ const Posts2 = () => {
 };
 
 export default Posts2;
-
