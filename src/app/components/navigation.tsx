@@ -2,6 +2,7 @@
 import React from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
+import { SignInButton,UserButton, SignedOut, SignIn } from '@clerk/nextjs';
 
 const Navigation = () => {
     const pathname = usePathname();
@@ -17,6 +18,16 @@ const Navigation = () => {
             <Link href='/products/1' className={pathname.startsWith("/products/") ? "mr-4 text-blue-500" : "mr-4 text-red-500"}>
                 Product
             </Link>
+            <Link href='/protected' className={pathname.startsWith("/protected") ? "mr-4 text-blue-500" : "mr-4 text-red-500"}>
+                Protected
+            </Link>
+
+            <SignedOut>
+                <SignInButton mode='modal' /> {/* ✅ Added SignInButton component */}
+            </SignedOut>
+
+            
+            
         </div>
     );
 }
