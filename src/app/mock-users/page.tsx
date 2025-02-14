@@ -1,8 +1,15 @@
 import { revalidatePath } from "next/cache";
-
+import { Metadata } from 'next';
 type User = {
   id: number;
   name: string;
+};
+
+
+
+export const metadata: Metadata ={
+  title:"PRODUCT",
+  description:"Infomation about a PRODUCT"
 };
 
 export default async function Post1() {

@@ -26,6 +26,10 @@ const Navigation = () => {
                 <SignInButton mode='modal' /> {/* ✅ Added SignInButton component */}
             </SignedOut>
 
+            <Link href='/mock-users'  className={pathname.startsWith("/mock-users/") ? "mr-4 text-blue-500" : "mr-4 text-red-500"}>
+                Mock-users
+            </Link>
+
             
             
         </div>
