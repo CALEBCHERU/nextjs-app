@@ -7,9 +7,7 @@ export async function GET(request){
         {id:3,name:"KYLIE"},
 
     ]
-    return {
-        status:200,
-        body: JSON.stringify(users)
-    }
+    // Convert the array to JSON and return it as a Response
+    return new Response(JSON.stringify(users));
 
 }
