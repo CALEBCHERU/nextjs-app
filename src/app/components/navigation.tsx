@@ -22,19 +22,22 @@ const Navigation = () => {
                 Protected
             </Link>
 
-            <SignedOut>
-                <SignInButton mode='modal' /> {/* ✅ Added SignInButton component */}
-            </SignedOut>
+            {/* <SignedOut> */}
+                {/* <SignInButton mode='modal' /> ✅ Added SignInButton component */}
+            {/* </SignedOut> */}
 
-            <Link href='/mock-users'  className={pathname.startsWith("/mock-users/") ? "mr-4 text-blue-500" : "mr-4 text-red-500"}>
+            <Link href='/mock-users'  className={pathname.startsWith("/mock-users") ? "mr-4 text-blue-500" : "mr-4 text-red-500"}>
                 Mock-users
             </Link>
 
-            <Link href='/dashboard'  className={pathname.startsWith("/dashboard/") ? "mr-4 text-blue-500" : "mr-4 text-red-500"}>
+            <Link href='/dashboard'  className={pathname.startsWith("/dashboard") ? "mr-4 text-blue-500" : "mr-4 text-red-500"}>
                 Dashboard
             </Link>
-            <Link href='/f1'  className={pathname.startsWith("/f1/") ? "mr-4 text-blue-500" : "mr-4 text-red-500"}>
+            <Link href='/f1'  className={pathname.startsWith("/f1") ? "mr-4 text-blue-500" : "mr-4 text-red-500"}>
                 F1
+            </Link>
+            <Link href='/form'  className={pathname.startsWith("/form") ? "mr-4 text-blue-500" : "mr-4 text-red-500"}>
+                Form
             </Link>
             
             
