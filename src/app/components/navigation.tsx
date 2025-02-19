@@ -30,6 +30,12 @@ const Navigation = () => {
                 Mock-users
             </Link>
 
+            <Link href='/dashboard'  className={pathname.startsWith("/dashboard/") ? "mr-4 text-blue-500" : "mr-4 text-red-500"}>
+                Dashboard
+            </Link>
+            <Link href='/f1'  className={pathname.startsWith("/f1/") ? "mr-4 text-blue-500" : "mr-4 text-red-500"}>
+                F1
+            </Link>
             
             
         </div>
