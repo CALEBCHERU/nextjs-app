@@ -2,7 +2,7 @@
 import { addProduct } from "@/app/form/lib/prisma"; 
  // Adjust import path if needed
 import { redirect } from "next/navigation";
-
+import { Submit } from "./submit";
 export default function AddProductPage() {
   async function createProduct(formData: FormData) {
     "use server";
@@ -37,7 +37,7 @@ export default function AddProductPage() {
         <textarea name="description" required className="w-full p-2 border rounded"></textarea>
       </label>
 
-      <button type="submit" className="bg-blue-500 text-white p-2 rounded">Add Product</button>
+      <Submit />
     </form>
   );
 }
