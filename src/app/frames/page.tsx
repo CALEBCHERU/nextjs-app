@@ -30,27 +30,34 @@ export default function Gallery() {
       </div>
 
       {selectedImage && (
-        <motion.div
+        <div
           className="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
           onClick={() => setSelectedImage(null)}
         >
-          <motion.div
+            {/*
+            initial, animate, exit: these are Framer Motion props (used for animations).
+            initial={{ opacity: 0 }}: starts invisible.
+            animate={{ opacity: 1 }}: fades in.
+           exit={{ opacity: 0 }}: fades out on unmount.
+            */}
+          <div
             className="bg-white p-4 rounded-lg shadow-lg relative"
             initial={{ scale: 0.8 }}
             animate={{ scale: 1 }}
             exit={{ scale: 0.8 }}
           >
+            {/*  initial={{ scale: 0.8 }}, etc.: also from Framer Motion — it zooms in smoothly*/}
             <Image src={selectedImage.src} alt={selectedImage.title} width={500} height={300} className="rounded-lg" />
             <div className="mt-2">
               <h2 className="text-xl font-bold">{selectedImage.title}</h2>
               <p className="text-gray-600">Photo by {selectedImage.author} on Unsplash</p>
               <p className="text-gray-500">{selectedImage.location}</p>
             </div>
-          </motion.div>
-        </motion.div>
+          </div>
+        </div>
       )}
     </div>
   );

@@ -34,6 +34,12 @@ export default async function Mockuser() {
 
     const newUser = await res.json(); // ✅ Added `await`
     revalidatePath("/mock-users"); // ✅ Ensure this path matches your actual page
+    /*revalidatePath()
+    In the App Router, Next.js uses data caching and static rendering (SSR/ISR) to make apps fast. By default, routes may be statically rendered and cached — so even if your data changes on the backend, the page might still show the old content unless revalidated.
+    This tells Next.js:
+    "Invalidate the cache for /mock-users and regenerate it the next time it's requested."
+    It ensures that any changes in backend data (e.g., user created, deleted) are reflected on the next page load.
+    * */
     console.log(newUser);
   }
 

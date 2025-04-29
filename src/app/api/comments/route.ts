@@ -13,6 +13,11 @@ const comments = [
 //   }
 
 // querry url
+// /api/comments
+// /api/comments?query=some-text
+// /api/comments?query=Nice
+// /api/comments?query=great
+
 export async function GET(request: NextRequest) {
   const searchParams = request.nextUrl.searchParams;
   const query = searchParams.get("query");

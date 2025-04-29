@@ -22,6 +22,6 @@ export default async function Docs({
       );
     }
   
-    return <h1>Docs home page</h1>;
+    return <h1>Docs home page <br/> add anything after the ure like : <br/> http://localhost:3000/docs/caleb/cheru/maja OR <br/> http://localhost:3000/docs/KYLIE </h1>;
   }
   

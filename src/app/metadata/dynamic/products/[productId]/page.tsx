@@ -13,7 +13,6 @@ export const generateMetadata = async ({
     description:`Information about a PRODUCT ${id}`
   };
 };
- 87
 
 
 export default async function ProductDetails({ params }: Props) {
