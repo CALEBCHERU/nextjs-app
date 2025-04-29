@@ -15,6 +15,9 @@ const Navigation = () => {
             <Link href='/about' className={pathname === "/about" ? "mr-4 text-blue-500" : "mr-4 text-red-500"}>
                 About
             </Link>
+            <Link href='/modal' className={pathname === "/modal" ? "mr-4 text-blue-500" : "mr-4 text-red-500"}>
+                Modal
+            </Link>
             <Link href='/products/1' className={pathname.startsWith("/products/") ? "mr-4 text-blue-500" : "mr-4 text-red-500"}>
                 Product
             </Link>
