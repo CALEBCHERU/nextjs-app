@@ -51,6 +51,9 @@ const Navigation = () => {
             <Link href='/form'  className={pathname.startsWith("/form") ? "mr-4 text-blue-500" : "mr-4 text-red-500"}>
                 Form
             </Link>
+            <Link href='/form/formDb'  className={pathname.startsWith("/form/formDb") ? "mr-4 text-blue-500" : "mr-4 text-red-500"}>
+                FormDb
+            </Link>
             <Link href='/frames'  className={pathname.startsWith("/frames") ? "mr-4 text-blue-500" : "mr-4 text-red-500"}>
                 Frames
             </Link>

@@ -1,6 +1,0 @@
-npm install prisma --save-dev
-npx prisma init
-
-Open .env and update the database URL:
-DATABASE_URL="file:./dev.db"
-
