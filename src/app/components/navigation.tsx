@@ -42,6 +42,9 @@ const Navigation = () => {
             <Link href='/dashboard'  className={pathname.startsWith("/dashboard") ? "mr-4 text-blue-500" : "mr-4 text-red-500"}>
                 Dashboard
             </Link>
+            <Link href='/dashboard-mini'  className={pathname.startsWith("/dashboard") ? "mr-4 text-blue-500" : "mr-4 text-red-500"}>
+                Dashboard-mini
+            </Link>
             <Link href='/templateTest'  className={pathname.startsWith("/templateTest") ? "mr-4 text-blue-500" : "mr-4 text-red-500"}>
                 Template
             </Link>
