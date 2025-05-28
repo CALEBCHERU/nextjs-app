@@ -48,8 +48,8 @@ const Navigation = () => {
             <Link href='/templateTest'  className={pathname.startsWith("/templateTest") ? "mr-4 text-blue-500" : "mr-4 text-red-500"}>
                 Template
             </Link>
-            <Link href='/f1'  className={pathname.startsWith("/f1") ? "mr-4 text-blue-500" : "mr-4 text-red-500"}>
-                F1
+            <Link href='/intercepted'  className={pathname.startsWith("/f1") ? "mr-4 text-blue-500" : "mr-4 text-red-500"}>
+                Intercepted
             </Link>
             <Link href='/form'  className={pathname.startsWith("/form") ? "mr-4 text-blue-500" : "mr-4 text-red-500"}>
                 Form

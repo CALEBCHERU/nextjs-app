@@ -1,4 +1,5 @@
 import React from 'react'
+import PhotoCaleb from './caleb-modal-photo';
 
 // METADATA
 export const metadata = {
@@ -14,10 +15,11 @@ export default function layout( {children,}:{ children: React.ReactNode; }) {
             {children}
             <div>
                 <br/>
-                <h2 style={{color:"blue"}}>
+                <h2 className='text-2xl text-green-600 font-bold'>
                     This is the Modal page
                 </h2>
             </div>
+            <PhotoCaleb/>
         </div>
     )
 }
