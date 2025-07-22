@@ -16,9 +16,9 @@ async function getParams(): Promise<{ id: string }> {
 }
 
 // If params is asynchronous (e.g., fetched from an API), use the second approach (with await).
-export default async function page({params,}:{params: Promise<{id: string }>}) {
+export default async function page({params}:{params: Promise<{id: string }>}) {
   const {id} = await params
-  return (
+  return ( 
   <div>
       <h1>PRODUCT</h1>
       <p>{id}</p>

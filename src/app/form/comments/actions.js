@@ -7,4 +7,8 @@ export async function addComment(prevComments, formData) {
   await new Promise((res) => setTimeout(res, 1000));
 
   return [...prevComments, { id: Date.now(), text: comment }];
+  
+  // simulating a failed backend
+  // return
+
 }

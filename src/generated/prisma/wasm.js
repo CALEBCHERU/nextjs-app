@@ -130,6 +130,14 @@ exports.Prisma.FormScalarFieldEnum = {
   createdAt: 'createdAt'
 };
 
+exports.Prisma.ProductScalarFieldEnum = {
+  id: 'id',
+  title: 'title',
+  price: 'price',
+  description: 'description',
+  createdAt: 'createdAt'
+};
+
 exports.Prisma.SortOrder = {
   asc: 'asc',
   desc: 'desc'
@@ -142,7 +150,8 @@ exports.Prisma.QueryMode = {
 
 
 exports.Prisma.ModelName = {
-  Form: 'Form'
+  Form: 'Form',
+  Product: 'Product'
 };
 
 /**

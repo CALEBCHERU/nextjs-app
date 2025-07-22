@@ -2,7 +2,7 @@
 import React from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { SignInButton,UserButton, SignedOut, SignIn } from '@clerk/nextjs';
+// import { SignInButton,UserButton, SignedOut, SignIn } from '@clerk/nextjs';
 
 const Navigation = () => {
     const pathname = usePathname();
@@ -18,9 +18,9 @@ const Navigation = () => {
             <Link href='/revenue' className={pathname === "/revenue" ? "mr-4 text-blue-500" : "mr-4 text-red-500"}>
                 Revenue
             </Link>
-            <Link href='/docs' className={pathname === "/docs" ? "mr-4 text-blue-500" : "mr-4 text-red-500"}>
+            {/* <Link href='/docs' className={pathname === "/docs" ? "mr-4 text-blue-500" : "mr-4 text-red-500"}>
                 docs
-            </Link>
+            </Link> */}
             <Link href='/modal' className={pathname === "/modal" ? "mr-4 text-blue-500" : "mr-4 text-red-500"}>
                 Modal
             </Link>
