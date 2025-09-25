@@ -15,11 +15,11 @@ export default function ComplexDashboardLayout({
     <div>
       <div>{children}</div>
       <div style={{ display: "flex" }}>
-        <div style={{ display: "flex", flexDirection: "column" }}>
+        <div style={{ display: "flex", flexDirection: "row" }}>
           <div>{users}</div>
           <div>{notifications}</div>
+          <div>{archive}</div>
         </div>
-        <div style={{ display: "flex", flex: 1 }}>{archive}</div>
       </div>
     </div>
   );
